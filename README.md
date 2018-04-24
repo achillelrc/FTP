@@ -1,4 +1,3 @@
-## FTP protocol
 
 A simple implementation of the File Transfer Protocol according to [RFC 959](http://www.faqs.org/rfcs/rfc959.html) written in C.
 ## Usage
