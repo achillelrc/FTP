@@ -73,7 +73,7 @@ int	handle_cli(struct sockaddr_in claddr, char *path, int clfd)
 	cli.root = getcwd(NULL, 1000);
 	cli.addr = claddr;
 	cli.fd = clfd;
-	while ((buf = getnextline(cli.fd)) && cli.root) {
+	while (cli.root && (buf = getnextline(cli.fd))) {
 		i = 0;
 		cli.curr = parse_com(buf, " \n\r");
 		while (cli.curr && i < 14 && strcmp(coms[i].name, cli.curr[0]))
