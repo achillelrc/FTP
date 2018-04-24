@@ -9,7 +9,7 @@ OB	=	server
 
 CC	=	gcc
 RM	=	rm -f
-CFLAGS	+=	-W -Wall -Werror -Wextra -I ./srcs/
+CFLAGS	+=	-W -Wall -Werror -Wextra -I ./include/
 
 OB_SRCS	=	./srcs/server.c	\
 		./srcs/comms1.c	\
