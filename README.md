@@ -1,6 +1,7 @@
 
 # File Transfer Protocol
 A simple implementation of the FTP according to [RFC 959](http://www.faqs.org/rfcs/rfc959.html) written in C.
+No leaks (valgrind check)
 ## Usage
 
 run `make` to compile the server.
